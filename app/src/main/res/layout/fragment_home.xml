@@ -1,14 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner"
+        tools:src="@drawable/banner" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home Fragement" />
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="สินค้าแนะนำ"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                app:srcCompat="@android:drawable/ic_menu_report_image"
+                tools:src="@tools:sample/avatars" />
+            <TextView
+                android:id="@+id/product_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อสินค้า 1"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/product_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="฿500"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/darker_gray"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btn_add_to_cart1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                app:srcCompat="@android:drawable/ic_menu_report_image"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/product_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อสินค้า 2"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/product_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="฿350"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/darker_gray"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btn_add_to_cart2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="โปรโมชั่นที่น่าสนใจ"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                app:srcCompat="@android:drawable/ic_menu_report_image"
+                tools:src="@tools:sample/avatars" />
+            <TextView
+                android:id="@+id/product_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อสินค้า 1"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/product_price_discounted1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="฿350"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#FF4081"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btn_add_to_cart3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="110dp"
+                android:layout_height="114dp"
+                app:srcCompat="@android:drawable/ic_menu_report_image"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/product_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อสินค้า 2"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/product_price_discounted2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="฿350"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="#FF4081"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btn_add_to_cart4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/product_border">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilterView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@android:drawable/ic_menu_report_image" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:text="RTX 5090"
+            android:layout_marginTop="25dp"
+            android:textAlignment="textStart"/>
+
+        <TextView
+            android:id="@+id/product_price_discounted1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="฿350"
+            android:textSize="25dp"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <!-- สินค้าตัวที่ 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/product_border">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilterView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@android:drawable/ic_menu_report_image" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:text="RTX 5080"
+            android:layout_marginTop="25dp"
+            android:textAlignment="textStart"/>
+
+        <TextView
+            android:id="@+id/product_price_discounted2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="฿290"
+            android:textSize="25dp"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="ชำระเงิน ฿640"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</FrameLayout>
